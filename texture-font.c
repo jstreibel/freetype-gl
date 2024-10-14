@@ -1095,6 +1095,7 @@ cleanup_stroker:
     }
 
     texture_atlas_set_region( self->atlas, x, y, tgt_w, tgt_h, buffer, tgt_w * self->atlas->depth);
+    self->atlas_dirty = 1;
 
     free( buffer );
 

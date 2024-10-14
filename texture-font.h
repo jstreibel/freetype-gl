@@ -270,6 +270,7 @@ typedef struct texture_font_t
      * Atlas structure to store glyphs data.
      */
     texture_atlas_t * atlas;
+    int atlas_dirty;
     
     /**
      * font location
